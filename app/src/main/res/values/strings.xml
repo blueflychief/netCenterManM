@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">管理客户端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_school_place">校区管理</string>
+    <string name="title_activity_building">楼栋管理</string>
+    <string name="title_activity_house">宿舍管理</string>
+    <string name="title_activity_manager_list">ManagerListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_manager">AddManagerActivity</string>
+    <string name="title_activity_add_buiding_manager">AddBuidingManagerActivity</string>
+    <string name="title_activity_check_repair">CheckRepairActivity</string>
+    <string name="title_activity_building_repair_list">报修列表</string>
+
+</resources>
