@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/androidPullToRefreshLib/androidPullToRefreshLib.iml" filepath="$PROJECT_DIR$/androidPullToRefreshLib/androidPullToRefreshLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleButtonLib/circleButtonLib.iml" filepath="$PROJECT_DIR$/circleButtonLib/circleButtonLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/netCenterManM.iml" filepath="$PROJECT_DIR$/netCenterManM.iml" />
     </modules>
   </component>
