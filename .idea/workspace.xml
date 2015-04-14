@@ -30,162 +30,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6182ecfa-7d7a-4266-b073-7f425a7234d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circleButtonLib/circleButtonLib.iml" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\Java_WebSocket_1_2_0_leancloud.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\android_async_http_1_4_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\appcompat_v7_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\avoscloud_push_v3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\avoscloud_sdk_v3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\fastjson.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\httpmime_4_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\support_annotations_21_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\.idea\libraries\support_v4_21_0_3.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="DELETED" beforePath="D:\biye\netCenterManM\androidPullToRefreshLib\build\intermediates\manifests\tmp\manifestMerger4252073435905936280.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\biye\netCenterManM\androidPullToRefreshLib\build\intermediates\manifests\tmp\manifestMerger5232609984000709913.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$anim.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$bool.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$integer.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\android\support\v7\appcompat\R.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\MainActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\MyApplication$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\MyApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$anim.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$bool.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$integer.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\R.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddBuildingActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddBuildingActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddBuildingActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddHouseActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddHouseActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddHouseActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddManagerActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddManagerActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddManagerActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddSchoolPlaceActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddSchoolPlaceActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\AddSchoolPlaceActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity$1$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingListActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingRepairListActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingRepairListActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingRepairListActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingRepairListActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\BuildingRepairListActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$3$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$5$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$5$1$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$5$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$5$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$5.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$6$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$6$1$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$6$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$6$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$6.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$7$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$7$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity$7.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\CheckRepairActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$4$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$5$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$5$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$5$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$5$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity$5.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\HouseListActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\ManagerActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\ManagerListActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\ManagerListActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\ManagerListActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\ManagerListActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\SchoolPlaceActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\SchoolPlaceActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\SchoolPlaceActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\SchoolPlaceActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\activity\SchoolPlaceActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\utils\Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\gdin\netcentermanm\utils\ViewHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$anim.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\dex\debug\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.2.0-leancloud-22c09f3388ab2efc1d90b3a164f135aa4ee62845.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-6defdbbb4c36e3a15d1795170ea62ca8fc5aa105.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\avoscloud-push-v3.0-a0f06aea6728840e6c6fab06e6a6ca10d542ab78.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\avoscloud-sdk-v3.0-d8e987afd0cb1a32d8015cfc1ae602e3e7103507.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-954ddb30ac1cd873ce580f645b7b943ada7e99c3.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-b733609c945d7ec9a3b6b981011f1faf6205c113.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-d8e68d25b31a0e2a17b20175c028809164c56db0.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\fastjson-8e3a8b8418a81cda17c802d520d9514040525c61.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\httpmime-4.2.4-75af9f532a96123d139b5b074821890529e59e31.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-5673dff732dff836b19c7b5b0d9115c665fab0f5.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\outputs\apk\app-debug-unaligned.apk" afterPath="" />
-      <change type="DELETED" beforePath="D:\biye\netCenterManM\app\build\outputs\apk\app-debug.apk" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/build/outputs/aar/androidPullToRefreshLib-debug.aar" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/build/outputs/aar/androidPullToRefreshLib-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/build/outputs/aar/androidPullToRefreshLib-release.aar" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/build/outputs/aar/androidPullToRefreshLib-release.aar" />
+      <change type="DELETED" beforePath="D:\biye\netCenterManM\library\library.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/Java-WebSocket-1.2.0-leancloud-22c09f3388ab2efc1d90b3a164f135aa4ee62845.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/Java-WebSocket-1.2.0-leancloud-22c09f3388ab2efc1d90b3a164f135aa4ee62845.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-6defdbbb4c36e3a15d1795170ea62ca8fc5aa105.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-6defdbbb4c36e3a15d1795170ea62ca8fc5aa105.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/avoscloud-push-v3.0-a0f06aea6728840e6c6fab06e6a6ca10d542ab78.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/avoscloud-push-v3.0-a0f06aea6728840e6c6fab06e6a6ca10d542ab78.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/avoscloud-sdk-v3.0-d8e987afd0cb1a32d8015cfc1ae602e3e7103507.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/avoscloud-sdk-v3.0-d8e987afd0cb1a32d8015cfc1ae602e3e7103507.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/classes.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-954ddb30ac1cd873ce580f645b7b943ada7e99c3.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-954ddb30ac1cd873ce580f645b7b943ada7e99c3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b733609c945d7ec9a3b6b981011f1faf6205c113.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-b733609c945d7ec9a3b6b981011f1faf6205c113.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-d8e68d25b31a0e2a17b20175c028809164c56db0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/classes-d8e68d25b31a0e2a17b20175c028809164c56db0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/fastjson-8e3a8b8418a81cda17c802d520d9514040525c61.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/fastjson-8e3a8b8418a81cda17c802d520d9514040525c61.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/httpmime-4.2.4-75af9f532a96123d139b5b074821890529e59e31.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/httpmime-4.2.4-75af9f532a96123d139b5b074821890529e59e31.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5673dff732dff836b19c7b5b0d9115c665fab0f5.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5673dff732dff836b19c7b5b0d9115c665fab0f5.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidPullToRefreshLib/androidPullToRefreshLib.iml" afterPath="$PROJECT_DIR$/androidPullToRefreshLib/androidPullToRefreshLib.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/netCenterManM.iml" afterPath="$PROJECT_DIR$/netCenterManM.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="netCenterManM.iws" />
@@ -4203,7 +4071,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -4220,7 +4088,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -4312,8 +4180,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="netCenterManM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -4334,16 +4211,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netCenterManM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4447,6 +4315,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -4475,6 +4359,11 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -4578,13 +4467,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -4597,7 +4486,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23908414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23906083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -4655,7 +4544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4663,7 +4551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4671,7 +4558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5036,7 +4922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56392694">
           <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5044,7 +4929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5052,7 +4936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
