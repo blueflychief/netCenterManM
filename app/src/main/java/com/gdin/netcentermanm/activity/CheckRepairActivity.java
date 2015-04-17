@@ -5,31 +5,28 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.text.format.DateUtils;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.AVInstallation;
 import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVPush;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.SaveCallback;
+import com.avos.avoscloud.SendCallback;
+import com.dd.CircularProgressButton;
 import com.gdin.netcentermanm.R;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -44,7 +41,7 @@ public class CheckRepairActivity extends Activity {
     private TextView tvCheckRepairProgress;
     private TextView tvCheckRepairAppointtime;
     private TextView tvCheckRepairResolveTime;
-    private TextView tvCommit;
+    private CircularProgressButton tvCommit;
     private TextView tvReturn;
 
     private String date = "";
@@ -70,6 +67,7 @@ public class CheckRepairActivity extends Activity {
     List managerUserIds =null;
     String appointmentTime = "";
     String resolveTime = "";
+    String installationId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +90,7 @@ public class CheckRepairActivity extends Activity {
         tvCheckRepairProgress = (TextView) findViewById(R.id.tv_check_repair_progress);
         tvCheckRepairAppointtime = (TextView) findViewById(R.id.tv_check_repair_appointtime);
         tvCheckRepairResolveTime = (TextView) findViewById(R.id.tv_check_repair_resolve_time);
-        tvCommit = (TextView) findViewById(R.id.tv_check_repair_commit);
+        tvCommit = (CircularProgressButton) findViewById(R.id.tv_check_repair_commit);
         tvReturn = (TextView) findViewById(R.id.tv_check_repair_return);
         AVQuery.getQuery("repair").whereEqualTo("objectId",avId).include("user").include("user.building").findInBackground(new FindCallback<AVObject>() {
             @Override
@@ -101,6 +99,7 @@ public class CheckRepairActivity extends Activity {
                     AVObject repair = avObjects.get(0);
                     AVUser user = repair.getAVUser("user");
                     AVObject building = user.getAVObject("building");
+                    installationId = user.getString("installationId");
                     buildingId = building.getObjectId();
                     userName = user.getString("sName");
                     progress = repair.getString("progress");
@@ -177,9 +176,14 @@ public class CheckRepairActivity extends Activity {
             }
         });
 
+        tvCommit.setIndeterminateProgressMode(true);
         tvCommit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(tvCommit.getProgress()==100){
+                    return ;
+                }
+                tvCommit.setProgress(50);
                 AVObject repair = new AVObject("repair");
                 repair.setObjectId(avId);
                 repair.put("managerUsers",managerUserObjId);
@@ -190,9 +194,25 @@ public class CheckRepairActivity extends Activity {
                     @Override
                     public void done(AVException e) {
                         if(e==null){
-                            Toast.makeText(CheckRepairActivity.this,"修改完成",Toast.LENGTH_LONG).show();
+                            //Toast.makeText(CheckRepairActivity.this,"修改完成",Toast.LENGTH_LONG).show();
+                            tvCommit.setProgress(100);
+                            AVQuery pushQuery = AVInstallation.getQuery();
+                            // 假设 THE_INSTALLATION_ID 是保存在用户表里的 installationId，
+                            // 可以在应用启动的时候获取并保存到用户表
+                            pushQuery.whereEqualTo("installationId", installationId);
+                            AVPush.sendMessageInBackground("您的报修进度有更新", pushQuery, new SendCallback() {
+                                @Override
+                                public void done(AVException e) {
+                                    if(e==null){
+                                        Log.d("avos","推送成功"+installationId);
+                                    }else{
+                                        Log.d("avos",e.toString());
+                                    }
+                                }
+                            });
                         }else{
-                            Toast.makeText(CheckRepairActivity.this,"修改失败",Toast.LENGTH_LONG).show();
+                            //Toast.makeText(CheckRepairActivity.this,"修改失败",Toast.LENGTH_LONG).show();
+                            tvCommit.setProgress(-1);
                         }
                     }
                 });
@@ -204,16 +224,17 @@ public class CheckRepairActivity extends Activity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CheckRepairActivity.this);
                 builder.setTitle("请选择报修进度");
-                final String[] titles = new String[]{"受理","完成"};
-                builder.setItems(titles,new DialogInterface.OnClickListener() {
+                final String[] titles = new String[]{"受理", "完成"};
+                builder.setItems(titles, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         tvCheckRepairProgress.setText(titles[which]);
-                        if(which==1){
+                        if (which == 1) {
                             tvCheckRepairResolveTime.setVisibility(View.VISIBLE);
-                        }else{
+                        } else {
                             tvCheckRepairResolveTime.setVisibility(View.INVISIBLE);
                         }
+                        tvCommit.setProgress(0);
                     }
                 });
                 builder.show();
@@ -242,6 +263,7 @@ public class CheckRepairActivity extends Activity {
                         timePickerDialog.setButton(TimePickerDialog.BUTTON_POSITIVE,"确定",new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                tvCommit.setProgress(0);
                                 dialog.cancel();
                             }
                         });
@@ -256,6 +278,7 @@ public class CheckRepairActivity extends Activity {
                 datePickerDialog.setButton(DatePickerDialog.BUTTON_POSITIVE,"确定",new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        tvCommit.setProgress(0);
                         dialog.cancel();
                     }
                 });
@@ -299,6 +322,7 @@ public class CheckRepairActivity extends Activity {
                 datePickerDialog.setButton(DatePickerDialog.BUTTON_POSITIVE, "确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        tvCommit.setProgress(0);
                         dialog.cancel();
                     }
                 });
@@ -327,6 +351,7 @@ public class CheckRepairActivity extends Activity {
                             }else{
                                 managerUserIds.remove(ids[i]);
                             }
+                            tvCommit.setProgress(0);
                         }
                         str = str.substring(0,str.length()-1);
                         tvCheckRepairManagerName.setText(str);
@@ -341,27 +366,5 @@ public class CheckRepairActivity extends Activity {
 
 
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_check_repair, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

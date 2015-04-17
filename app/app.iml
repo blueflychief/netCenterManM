@@ -95,6 +95,7 @@
     <orderEntry type="library" exported="" name="avoscloud-push-v3.0" level="project" />
     <orderEntry type="library" exported="" name="android-async-http-1.4.6" level="project" />
     <orderEntry type="library" exported="" name="httpmime-4.2.4" level="project" />
+    <orderEntry type="module" module-name="circleButtonLib" exported="" />
     <orderEntry type="module" module-name="androidPullToRefreshLib" exported="" />
   </component>
 </module>

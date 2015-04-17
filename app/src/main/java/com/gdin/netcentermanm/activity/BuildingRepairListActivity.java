@@ -54,7 +54,14 @@ public class BuildingRepairListActivity extends Activity {
         //listView = refreshListView.getRefreshableView();
         AVObject building = new AVObject("buildings");
         building.setObjectId(buildingId);
-        AVQuery inQuery = AVQuery.getQuery("_User").whereEqualTo("building", building);
+        AVQuery inQuery = AVUser.getQuery();
+        inQuery.whereEqualTo("building", building);
+        AVUser.getQuery().whereEqualTo("building", building).findInBackground(new FindCallback<AVUser>() {
+            @Override
+            public void done(List<AVUser> list, AVException e) {
+
+            }
+        });
         adapter = new BaseAdapter() {
             @Override
             public int getCount() {
@@ -87,7 +94,7 @@ public class BuildingRepairListActivity extends Activity {
                 return convertView;
             }
         };
-        query = AVQuery.getQuery("repair").whereMatchesQuery("user",inQuery);
+        query = AVQuery.getQuery("repair").whereMatchesQuery("user", inQuery);
         //query = AVQuery.getQuery("repair").whereEqualTo();
         refreshListView.setAdapter(adapter);
         refresh();

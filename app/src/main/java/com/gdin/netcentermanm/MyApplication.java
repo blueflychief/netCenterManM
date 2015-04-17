@@ -5,9 +5,11 @@ import android.app.Application;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVInstallation;
 import com.avos.avoscloud.AVOSCloud;
+import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.SaveCallback;
 
 public class MyApplication extends Application{
+    public static String installationId = "";
 	
 	
 	@Override
@@ -23,9 +25,14 @@ public class MyApplication extends Application{
                     public void done(AVException e) {
                         if (e == null) {
                             // 保存成功
-                            String installationId = AVInstallation
+                            installationId = AVInstallation
                                     .getCurrentInstallation()
                                     .getInstallationId();
+                            AVUser user = AVUser.getCurrentUser();
+                            if(user!=null){
+                                user.put("installationId",installationId);
+                                user.saveInBackground();
+                            }
                             // 关联 installationId 到用户表等操作……
                         } else {
                             // 保存失败，输出错误信息

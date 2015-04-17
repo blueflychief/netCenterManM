@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -177,13 +178,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center">
-
-        <TextView
+        <com.dd.CircularProgressButton
+            android:id="@+id/tv_check_repair_commit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="确定"
-            android:id="@+id/tv_check_repair_commit"
-          />
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_iconComplete="@drawable/ic_action_accept"
+            app:cpb_iconError="@drawable/ic_action_cancel"
+            app:cpb_textIdle="确定" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -9,6 +9,13 @@
         <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-6defdbbb4c36e3a15d1795170ea62ca8fc5aa105.jar" />
     </item>
     <item
+        jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-954ddb30ac1cd873ce580f645b7b943ada7e99c3.jar" />
+    </item>
+    <item
         jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\netCenterManM\androidPullToRefreshLib\unspecified\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -16,11 +23,25 @@
         <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-b733609c945d7ec9a3b6b981011f1faf6205c113.jar" />
     </item>
     <item
+        jar="D:\biye\netCenterManM\app\libs\avoscloud-push-v3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ca269f4e5421010656bb324052d6b78859c93251">
+        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\avoscloud-push-v3.0-a0f06aea6728840e6c6fab06e6a6ca10d542ab78.jar" />
+    </item>
+    <item
         jar="D:\biye\netCenterManM\app\libs\avoscloud-sdk-v3.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="135db4344745ea0f1105a5a15a07697a47bf0e00">
         <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\avoscloud-sdk-v3.0-d8e987afd0cb1a32d8015cfc1ae602e3e7103507.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManM\app\libs\Java-WebSocket-1.2.0-leancloud.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="221fb6750fcf164a85a98bbbafe0879e18868562">
+        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.2.0-leancloud-22c09f3388ab2efc1d90b3a164f135aa4ee62845.jar" />
     </item>
     <item
         jar="D:\biye\netCenterManM\app\libs\fastjson.jar"
@@ -37,34 +58,6 @@
         <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\httpmime-4.2.4-75af9f532a96123d139b5b074821890529e59e31.jar" />
     </item>
     <item
-        jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-d8e68d25b31a0e2a17b20175c028809164c56db0.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-954ddb30ac1cd873ce580f645b7b943ada7e99c3.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManM\app\libs\avoscloud-push-v3.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ca269f4e5421010656bb324052d6b78859c93251">
-        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\avoscloud-push-v3.0-a0f06aea6728840e6c6fab06e6a6ca10d542ab78.jar" />
-    </item>
-    <item
-        jar="D:\biye\netCenterManM\app\libs\Java-WebSocket-1.2.0-leancloud.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="221fb6750fcf164a85a98bbbafe0879e18868562">
-        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.2.0-leancloud-22c09f3388ab2efc1d90b3a164f135aa4ee62845.jar" />
-    </item>
-    <item
         jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -77,6 +70,20 @@
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
         <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-5673dff732dff836b19c7b5b0d9115c665fab0f5.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-d8e68d25b31a0e2a17b20175c028809164c56db0.jar" />
+    </item>
+    <item
+        jar="D:\biye\netCenterManM\app\build\intermediates\exploded-aar\netCenterManM\circleButtonLib\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3d98753304eeb01ffef8aaf1ee924e21a88ce0e0">
+        <dex dex="D:\biye\netCenterManM\app\build\intermediates\pre-dexed\debug\classes-c7f7901908f7151b96f99dcee0b040b2cc981658.jar" />
     </item>
 
 </items>

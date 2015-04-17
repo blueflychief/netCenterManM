@@ -33,4 +33,5 @@ dependencies {
     compile files('libs/httpmime-4.2.4.jar')
     compile files('libs/Java-WebSocket-1.2.0-leancloud.jar')
     compile project(':androidPullToRefreshLib')
+    compile project(':circleButtonLib')
 }
