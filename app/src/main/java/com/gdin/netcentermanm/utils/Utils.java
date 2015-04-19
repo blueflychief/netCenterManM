@@ -9,4 +9,9 @@ public class Utils {
 	public static String date2String(Date date){
 		return dateFormat.format(date);
 	}
+    public static String date2String(Date date,String format){
+        return new SimpleDateFormat(format).format(date);
+    }
+
+
 }

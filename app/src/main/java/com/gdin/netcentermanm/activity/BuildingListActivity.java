@@ -9,12 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.FindCallback;
 import com.gdin.netcentermanm.R;
 import com.gdin.netcentermanm.utils.ViewHolder;
@@ -26,6 +28,7 @@ public class BuildingListActivity extends Activity  {
     private ListView listView;
     private TextView tvAddBuilding;
     private List<AVObject> data;
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,13 @@ public class BuildingListActivity extends Activity  {
     }
 
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         final String schoolPlaceId = getIntent().getStringExtra("placeId");
         final String placeName = getIntent().getStringExtra("placeName");
         listView = (ListView) findViewById(R.id.listView);
@@ -106,6 +116,12 @@ public class BuildingListActivity extends Activity  {
                 startActivity(intent);
             }
         });
+        AVUser user = AVUser.getCurrentUser();
+        if(user!=null&&user.getBoolean("managerRoot")){
+            tvAddBuilding.setVisibility(View.VISIBLE);
+        }else{
+            tvAddBuilding.setVisibility(View.GONE);
+        }
     }
 
 }

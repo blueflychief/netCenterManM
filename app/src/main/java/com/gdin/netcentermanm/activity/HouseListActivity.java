@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +42,7 @@ public class HouseListActivity extends Activity  {
     private boolean[] isCheckeds;
     private String[] objId;
     private TextView tvCheckRepair;
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,13 @@ public class HouseListActivity extends Activity  {
         initView();
     }
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         builder = new AlertDialog.Builder(HouseListActivity.this);
         final String placeName = getIntent().getStringExtra("placeName");
         final String buildingId = getIntent().getStringExtra("buildingId");
@@ -114,6 +123,15 @@ public class HouseListActivity extends Activity  {
                 startActivity(intent);
             }
         });
+
+        AVUser user = AVUser.getCurrentUser();
+        if(user!=null&&user.getBoolean("managerRoot")){
+            tvAddHouse.setVisibility(View.VISIBLE);
+            tvManager.setVisibility(View.VISIBLE);
+        }else{
+            tvAddHouse.setVisibility(View.GONE);
+            tvManager.setVisibility(View.GONE);
+        }
 
 /*        AVUser.getQuery().whereEqualTo("isManager",true).include("buildings").findInBackground(new FindCallback<AVUser>() {
             @Override
@@ -200,6 +218,7 @@ public class HouseListActivity extends Activity  {
                 }).create().show();
             }
         });
+
     }
 
 }

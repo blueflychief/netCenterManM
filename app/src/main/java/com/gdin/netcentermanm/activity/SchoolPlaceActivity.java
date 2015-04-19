@@ -3,6 +3,7 @@ package com.gdin.netcentermanm.activity;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.FindCallback;
 import com.gdin.netcentermanm.R;
 import com.gdin.netcentermanm.R.layout;
@@ -18,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -28,6 +30,7 @@ public class SchoolPlaceActivity extends Activity {
     private ListView lvSchoolPlace;
     private TextView tvAddSchoolPlace;
     private List<AVObject> data;
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,13 @@ public class SchoolPlaceActivity extends Activity {
     }
 
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         lvSchoolPlace = (ListView) findViewById(R.id.lv_school_place);
         tvAddSchoolPlace = (TextView) findViewById(R.id.tv_add_school_place);
         AVQuery.getQuery("school_place").setCachePolicy(AVQuery.CachePolicy.CACHE_THEN_NETWORK).findInBackground(new FindCallback<AVObject>() {
@@ -98,6 +108,13 @@ public class SchoolPlaceActivity extends Activity {
                 startActivity(new Intent(SchoolPlaceActivity.this,AddSchoolPlaceActivity.class));
             }
         });
+
+        AVUser user = AVUser.getCurrentUser();
+        if(user!=null&&user.getBoolean("managerRoot")){
+            tvAddSchoolPlace.setVisibility(View.VISIBLE);
+        }else{
+            tvAddSchoolPlace.setVisibility(View.GONE);
+        }
 
     }
 }

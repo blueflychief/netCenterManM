@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -39,6 +40,7 @@ public class BuildingRepairListActivity extends Activity {
     private BaseAdapter adapter;
     private List<AVObject> data = new ArrayList<>(0);
     private AVQuery query;
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,13 @@ public class BuildingRepairListActivity extends Activity {
     }
 
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         final String buildingId = getIntent().getExtras().getString("buildingId");
         refreshListView = (PullToRefreshListView) findViewById(R.id.lv_building_repair);
 

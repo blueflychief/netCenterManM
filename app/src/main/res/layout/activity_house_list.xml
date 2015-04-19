@@ -3,8 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66BB6A">
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_18dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="宿舍列表"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
 
     <ListView
+        android:layout_marginTop="50dp"
         android:id="@+id/lv_house"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,20 +49,24 @@
             android:id="@+id/tv_add_house"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_selector_green_normal"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:layout_gravity="center"
             android:text="添加宿舍" />
         <TextView
             android:layout_marginLeft="40dp"
             android:id="@+id/tv_check_repair"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="invisible"
+            android:visibility="gone"
             android:text="查看报修" />
         <TextView
             android:layout_marginLeft="40dp"
             android:id="@+id/tv_add_manager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="invisible"
+            android:visibility="gone"
             android:text="指派负责网管" />
     </LinearLayout>
 

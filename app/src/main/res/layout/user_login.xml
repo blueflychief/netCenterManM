@@ -6,49 +6,93 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:id="@+id/ll_user_login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66BB6A">
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_18dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="登录"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
         <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:layout_margin="20dp"
+            >
 
 
          <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="17dp">
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="用户名" />
+                android:layout_height="match_parent"
+                android:textColor="#333333"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="用  户  名" />
 
             <EditText
                 android:id="@+id/et_user_login_student_num"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:singleLine="true"
-                android:inputType="phone" >
+                android:layout_marginLeft="17dp"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="17sp"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" >
 
                 <requestFocus />
             </EditText>
 
         </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#A07ED183"/>
         
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#333333"
                 android:text="登陆密码" />
             <EditText
                 android:id="@+id/et_user_login_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:ems="10"
+                android:background="@null"
+                android:layout_marginLeft="17dp"
+                android:textSize="17sp"
+                android:textColor="#333333"
                 android:hint="请输入您的登陆密码"
                 android:inputType="textPassword" >
             </EditText>
@@ -70,6 +114,7 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             app:cpb_cornerRadius="48dp"
+            app:cpb_selectorIdle="@drawable/button_selecton_green"
             app:cpb_iconComplete="@drawable/ic_action_accept"
             app:cpb_iconError="@drawable/ic_action_cancel"
             app:cpb_textIdle="登录" />

@@ -18,6 +18,7 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.SaveCallback;
+import com.dd.CircularProgressButton;
 import com.gdin.netcentermanm.R;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class AddHouseActivity extends Activity  {
 
     private TextView tvPlaceName;
     private TextView tvBuildingName;
-    private TextView tvAddHouseSubmit;
+    private CircularProgressButton tvAddHouseSubmit;
     private EditText etHouseName;
 
    // private BaseAdapter placeAdapter;
@@ -51,7 +52,7 @@ public class AddHouseActivity extends Activity  {
         final String placeName = getIntent().getStringExtra("placeName");
         tvPlaceName = (TextView) findViewById(R.id.tv_place_name);
         tvBuildingName = (TextView) findViewById(R.id.tv_building_name);
-        tvAddHouseSubmit = (TextView) findViewById(R.id.tv_add_house_submit);
+        tvAddHouseSubmit = (CircularProgressButton) findViewById(R.id.tv_add_house_submit);
         etHouseName = (EditText) findViewById(R.id.et_house_name);
 
         tvBuildingName.setText(buildingName);
@@ -161,6 +162,7 @@ public class AddHouseActivity extends Activity  {
             }
         });*/
 
+        tvAddHouseSubmit.setIndeterminateProgressMode(true);
         tvAddHouseSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -173,7 +175,8 @@ public class AddHouseActivity extends Activity  {
                     Toast.makeText(AddHouseActivity.this,"请填写房号",Toast.LENGTH_LONG).show();
                     return;
                 }
-                tvAddHouseSubmit.setClickable(false);
+                //tvAddHouseSubmit.setClickable(false);
+                tvAddHouseSubmit.setProgress(50);
                 AVObject house = new AVObject("houses");
                 AVObject building = new AVObject("buildings");
                 building.setObjectId(buildingId);
@@ -184,7 +187,9 @@ public class AddHouseActivity extends Activity  {
                     public void done(AVException e) {
                         if(e==null){
                             Toast.makeText(AddHouseActivity.this,"添加成功",Toast.LENGTH_LONG).show();
+                            tvAddHouseSubmit.setProgress(100);
                         }else{
+                            tvAddHouseSubmit.setProgress(-1);
                             Toast.makeText(AddHouseActivity.this,"添加失败",Toast.LENGTH_LONG).show();
                         }
                         tvAddHouseSubmit.setClickable(true);

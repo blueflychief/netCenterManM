@@ -1,6 +1,7 @@
 package com.gdin.netcentermanm;
 
 import android.app.Application;
+import android.util.Log;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVInstallation;
@@ -30,6 +31,7 @@ public class MyApplication extends Application{
                                     .getInstallationId();
                             AVUser user = AVUser.getCurrentUser();
                             if(user!=null){
+                                Log.d("当前用户",user.getUsername());
                                 user.put("installationId",installationId);
                                 user.saveInBackground();
                             }

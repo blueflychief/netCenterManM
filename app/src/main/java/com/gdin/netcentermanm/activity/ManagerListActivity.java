@@ -8,14 +8,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.FindCallback;
+import com.gdin.netcentermanm.MainActivity;
 import com.gdin.netcentermanm.R;
 
 import java.util.ArrayList;
@@ -26,7 +30,8 @@ public class ManagerListActivity extends ActionBarActivity {
     private ListView lvManager;
     private TextView tvAddManager;
     private BaseAdapter adapter;
-    private List<AVObject> data = new ArrayList<>();
+    private List<AVUser> data = new ArrayList<>();
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +42,13 @@ public class ManagerListActivity extends ActionBarActivity {
     }
 
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         lvManager = (ListView) findViewById(R.id.lv_manager);
         tvAddManager = (TextView) findViewById(R.id.tv_add_manager);
         adapter = new BaseAdapter() {
@@ -64,18 +76,18 @@ public class ManagerListActivity extends ActionBarActivity {
                     tv = new TextView(ManagerListActivity.this);
                 }
                 tv.setTextSize(28);
-                tv.setText(data.get(position).getString("name"));
+                tv.setText(data.get(position).getUsername());
                 return tv;
             }
         };
         lvManager.setAdapter(adapter);
-        AVQuery.getQuery("manager").findInBackground(new FindCallback<AVObject>() {
+        AVUser.getQuery().whereEqualTo("isManager",true).addAscendingOrder("username").findInBackground(new FindCallback<AVUser>() {
             @Override
-            public void done(List<AVObject> avObjects, AVException e) {
-                if(e==null){
-                    data = avObjects;
+            public void done(List<AVUser> avUsers, AVException e) {
+                if (e == null) {
+                    data = avUsers;
                     adapter.notifyDataSetChanged();
-                }else{
+                } else {
                     Log.d("", e.toString());
                 }
             }
@@ -85,6 +97,21 @@ public class ManagerListActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ManagerListActivity.this,AddManagerActivity.class));
+            }
+        });
+        lvManager.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                AVUser user =   data.get(position);
+                bundle.putString("id",user.getObjectId());
+                bundle.putString("name",user.getUsername());
+                bundle.putString("sName",user.getString("sName"));
+                bundle.putBoolean("isRoot",user.getBoolean("managerRoot"));
+                bundle.putBoolean("enable",user.getBoolean("enable"));
+                Intent intent = new Intent(ManagerListActivity.this,ManagerInfoActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }

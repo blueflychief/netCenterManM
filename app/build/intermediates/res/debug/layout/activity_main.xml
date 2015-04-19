@@ -4,10 +4,27 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66BB6A">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="广师网络管理端"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:id="@+id/img_main_menu"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_toc_white_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
 </RelativeLayout>
-<!-- From: file:/D:/biye/netCenterManM/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/layout/activity_main.xml -->

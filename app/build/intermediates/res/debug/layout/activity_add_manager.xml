@@ -1,29 +1,110 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.gdin.netcentermanm.activity.AddManagerActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66BB6A">
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_18dp"
+            android:padding="10dp"/>
 
-    <EditText
-        android:layout_marginTop="20dp"
-        android:id="@+id/et_manager_name"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="添加管理员"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="用户名"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_manager_pass"
-        android:inputType="textPassword"
-        android:hint="密码"/>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
+        android:background="@drawable/bg_input"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <EditText
+            android:id="@+id/et_manager_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="登录账号"/>
+
+        <EditText
+            android:id="@+id/et_manager_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:hint="真实姓名"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#A07ED183"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/et_manager_pass"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:hint="密码"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#A07ED183"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="是否具有超级管理员权限"/>
+
+        <RadioGroup
+            android:id="@+id/rg_add_manager_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="是否具有超级管理员权限">
+            <RadioButton
+                android:id="@+id/rb_manager_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是"/>
+            <RadioButton
+                android:id="@+id/rb_manager_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否"
+                android:checked="true"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    <com.dd.CircularProgressButton
         android:id="@+id/tv_add_manager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加" />
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cpb_cornerRadius="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cpb_selectorIdle="@drawable/button_selecton_green"
+        app:cpb_iconComplete="@drawable/ic_action_accept"
+        app:cpb_iconError="@drawable/ic_action_cancel"
+        app:cpb_textIdle="添加" />
 
 </LinearLayout>
-<!-- From: file:/D:/biye/netCenterManM/app/src/main/res/layout/activity_add_manager.xml -->
+<!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/layout/activity_add_manager.xml -->

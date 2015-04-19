@@ -3,6 +3,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#66BB6A">
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_18dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="楼栋列表"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="17sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
 
     <ListView
         android:layout_width="match_parent"
@@ -16,5 +38,8 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="添加楼栋"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selector_green_normal"
         android:id="@+id/tv_add_building" />
 </LinearLayout>

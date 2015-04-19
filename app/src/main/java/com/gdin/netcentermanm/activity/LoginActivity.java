@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,17 +22,25 @@ public class LoginActivity extends Activity {
 	private EditText etUserLoginStudentNum;
 	private EditText etUserLoginPassword;
 	private CircularProgressButton tvUserLoginSubmit;
+    private ImageView imgReturn;
 
 
-	@Override
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(layout.activity_manager);
+		setContentView(layout.user_login);
 		initViews();
 	}
 
 
 	private void initViews() {
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 		etUserLoginStudentNum = (EditText)findViewById( R.id.et_user_login_student_num );
 		etUserLoginPassword = (EditText)findViewById( R.id.et_user_login_password );
 		tvUserLoginSubmit = (CircularProgressButton) findViewById( R.id.tv_user_login_submit );
@@ -46,7 +55,7 @@ public class LoginActivity extends Activity {
 					return ;
 				}
 				if(TextUtils.isEmpty(name)||TextUtils.isEmpty(pass)){
-					Toast.makeText(LoginActivity.this,"«ÎÃÓ–¥ÕÍ’˚–≈œ¢",Toast.LENGTH_LONG).show();
+					Toast.makeText(LoginActivity.this,"ËØ∑Â°´ÂÜôÊúâÊïà‰ø°ÊÅØ",Toast.LENGTH_LONG).show();
 					return;
 				}
 				tvUserLoginSubmit.setProgress(50);
@@ -54,9 +63,15 @@ public class LoginActivity extends Activity {
 					@Override
 					public void done(AVUser avUser, AVException e) {
 						if(e==null){
+                            if(!avUser.getBoolean("isManager")||!avUser.getBoolean("enable")){
+                                Toast.makeText(LoginActivity.this,"Êó†ÊïàÁöÑË¥¶Âè∑",Toast.LENGTH_LONG).show();
+                               tvUserLoginSubmit.setProgress(-1);
+                               return;
+                            }
 							tvUserLoginSubmit.setProgress(100);
 							avUser.put("installationId", MyApplication.installationId);
 							avUser.saveInBackground();
+                            finish();
 						}else{
 							tvUserLoginSubmit.setProgress(-1);
 							Log.d("avos",e.toString());

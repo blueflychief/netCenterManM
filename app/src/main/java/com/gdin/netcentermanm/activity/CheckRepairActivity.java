@@ -6,10 +6,14 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
+import android.view.TextureView;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -24,9 +28,11 @@ import com.avos.avoscloud.SaveCallback;
 import com.avos.avoscloud.SendCallback;
 import com.dd.CircularProgressButton;
 import com.gdin.netcentermanm.R;
+import com.gdin.netcentermanm.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -42,7 +48,9 @@ public class CheckRepairActivity extends Activity {
     private TextView tvCheckRepairAppointtime;
     private TextView tvCheckRepairResolveTime;
     private CircularProgressButton tvCommit;
-    private TextView tvReturn;
+    private TextView tvComment;
+    private EditText etComment;
+
 
     private String date = "";
     private String time = "";
@@ -68,6 +76,9 @@ public class CheckRepairActivity extends Activity {
     String appointmentTime = "";
     String resolveTime = "";
     String installationId = "";
+    String comment = "";
+
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +89,13 @@ public class CheckRepairActivity extends Activity {
 
 
     private void initView(){
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         Bundle bundle = getIntent().getExtras();
         avId = bundle.getString("avId");
         tvCheckRepairTitle = (TextView) findViewById(R.id.tv_check_repair_title);
@@ -91,7 +109,9 @@ public class CheckRepairActivity extends Activity {
         tvCheckRepairAppointtime = (TextView) findViewById(R.id.tv_check_repair_appointtime);
         tvCheckRepairResolveTime = (TextView) findViewById(R.id.tv_check_repair_resolve_time);
         tvCommit = (CircularProgressButton) findViewById(R.id.tv_check_repair_commit);
-        tvReturn = (TextView) findViewById(R.id.tv_check_repair_return);
+        tvComment = (TextView) findViewById(R.id.tv_check_repair_resolve_comment);
+        etComment = (EditText) findViewById(R.id.et_check_repair_resolve_comment);
+
         AVQuery.getQuery("repair").whereEqualTo("objectId",avId).include("user").include("user.building").findInBackground(new FindCallback<AVObject>() {
             @Override
             public void done(List<AVObject> avObjects, AVException e) {
@@ -112,7 +132,12 @@ public class CheckRepairActivity extends Activity {
                     managerUserIds = repair.getList("managerUsers");
                     buildingName = building.getString("name");
                     house = user.getString("house");
+                    String commentStr = user.getString("comment");
 
+                    if(!TextUtils.isEmpty(commentStr)){
+                        comment = commentStr;
+                        tvComment.setText(comment);
+                    }
 
                     tvCheckRepairTitle.setText(title);
                     tvCheckRepairUserName.setText(userName);
@@ -169,12 +194,6 @@ public class CheckRepairActivity extends Activity {
             }
         });
 
-        tvReturn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
         tvCommit.setIndeterminateProgressMode(true);
         tvCommit.setOnClickListener(new View.OnClickListener() {
@@ -190,6 +209,11 @@ public class CheckRepairActivity extends Activity {
                 repair.put("progress",tvCheckRepairProgress.getText().toString());
                 repair.put("resolveTime",tvCheckRepairResolveTime.getText().toString());
                 repair.put("appointmentMTime",tvCheckRepairAppointtime.getText().toString());
+                String s = etComment.getText().toString();
+                if(!TextUtils.isEmpty(s)){
+                    String date = Utils.date2String(new Date());
+                    repair.put("comment",comment+"\n"+date+"\n"+s);
+                }
                 repair.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(AVException e) {

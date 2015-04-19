@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.SaveCallback;
+import com.dd.CircularProgressButton;
 import com.gdin.netcentermanm.R;
 
 import java.util.ArrayList;
@@ -25,11 +27,12 @@ import java.util.List;
 public class AddBuildingActivity extends Activity {
 
     private TextView tvPlaceName;
-    private TextView tvAddSchoolPlaceSubmit;
+    private CircularProgressButton tvAddSchoolPlaceSubmit;
     private EditText etName;
     private List<AVObject> data = new ArrayList<>();
     private BaseAdapter adapter;
     private int index ;
+    private ImageView imgReturn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +44,17 @@ public class AddBuildingActivity extends Activity {
     }
 
     private void initView() {
+        imgReturn = (ImageView) findViewById(R.id.img_return);
+        imgReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         final String placeId  = getIntent().getStringExtra("placeId");
         String placeName = getIntent().getStringExtra("placeName");
         tvPlaceName = (TextView) findViewById(R.id.tv_building_name);
-        tvAddSchoolPlaceSubmit = (TextView) findViewById(R.id.tv_add_building_submit);
+        tvAddSchoolPlaceSubmit = (CircularProgressButton) findViewById(R.id.tv_add_building_submit);
         etName = (EditText) findViewById(R.id.et_add_building_name);
 
         tvPlaceName.setText(placeName);
@@ -103,6 +113,7 @@ public class AddBuildingActivity extends Activity {
             }
         });*/
 
+        tvAddSchoolPlaceSubmit.setIndeterminateProgressMode(true);
         tvAddSchoolPlaceSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,7 +123,11 @@ public class AddBuildingActivity extends Activity {
                     Toast.makeText(AddBuildingActivity.this,"请填写详细资料",Toast.LENGTH_LONG).show();
                     return;
                 }
-                tvAddSchoolPlaceSubmit.setClickable(false);
+                if(tvAddSchoolPlaceSubmit.getProgress()==50){
+                    return;
+                }
+                tvAddSchoolPlaceSubmit.setProgress(50);
+                //tvAddSchoolPlaceSubmit.setClickable(false);
                 AVObject place = new AVObject("school_place");
                 place.setObjectId(placeId);
                 AVObject building = new AVObject("buildings");
@@ -122,11 +137,14 @@ public class AddBuildingActivity extends Activity {
                     @Override
                     public void done(AVException e) {
                         if(e==null){
+                            tvAddSchoolPlaceSubmit.setProgress(100);
                             Toast.makeText(AddBuildingActivity.this,"添加成功",Toast.LENGTH_LONG).show();
                         }else{
+                            tvAddSchoolPlaceSubmit.setProgress(-1);
                             Toast.makeText(AddBuildingActivity.this,"添加失败",Toast.LENGTH_LONG).show();
                         }
-                        tvAddSchoolPlaceSubmit.setClickable(true);
+                        //tvAddSchoolPlaceSubmit.setClickable(true);
+
                     }
                 });
             }
