@@ -26,5 +26,17 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"/>
     </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_main_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+    </LinearLayout>
 </RelativeLayout>
-<!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/D:/biye/netCenterManM/app/src/main/res/layout/activity_main.xml -->

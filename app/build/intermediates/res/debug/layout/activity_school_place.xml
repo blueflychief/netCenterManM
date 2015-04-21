@@ -46,7 +46,8 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_selector_green_normal"
         android:textColor="#ffffff"
+        android:visibility="gone"
         android:text="添加校区" />
 
 </RelativeLayout>
-<!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/layout/activity_school_place.xml -->
+<!-- From: file:/D:/biye/netCenterManM/app/src/main/res/layout/activity_school_place.xml -->

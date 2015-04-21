@@ -12,6 +12,7 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="修改密码"
+        android:drawableLeft="@drawable/ic_action_edit"
         android:textColor="#333333" />
 
     <TextView
@@ -20,6 +21,7 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="校区详情"
+        android:drawableLeft="@drawable/ic_action_bargraph"
         android:textColor="#333333" />
 
     <TextView
@@ -28,6 +30,7 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="新闻管理"
+        android:drawableLeft="@drawable/ic_action_book"
         android:textColor="#333333" />
 
     <TextView
@@ -36,14 +39,25 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:text="退出账号"
+        android:drawableLeft="@drawable/ic_action_goleft"
         android:textColor="#333333" />
     <TextView
         android:id="@+id/tv_main_menu_manager_list"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:gravity="center"
+        android:drawableLeft="@drawable/ic_action_users"
         android:text="管理员列表"
         android:visibility="gone"
         android:textColor="#333333" />
 
+    <TextView
+        android:id="@+id/tv_main_menu_share"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="分享"
+        android:drawableLeft="@drawable/ic_action_share"
+        android:visibility="visible"
+        android:textColor="#333333" />
 </LinearLayout>

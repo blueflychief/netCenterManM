@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -18,21 +18,21 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="alpha_00">#00000000</color>
     <color name="background">#e5e5e5</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
     <color name="blue">#836FFF</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -42,7 +42,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="cpb_blue">#ff0099cc</color>
     <color name="cpb_blue_dark">#ff00719b</color>
@@ -52,45 +52,45 @@
     <color name="cpb_red">#ffff4444</color>
     <color name="cpb_red_dark">#ffcd3a3a</color>
     <color name="cpb_white">@android:color/white</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="gold">#b89766</color>
     <color name="gray">#DBDBDB</color>
     <color name="green">#00FF00</color>
     <color name="grey21">#363636</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="light_orange">#fcb75c</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="lucensy">#00000001</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="orange">#ffa500</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -100,10 +100,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="red">#fe0202</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#40ffffff</color>
     <color name="ripple_material_light">#40000000</color>
@@ -113,7 +113,7 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="text_gray">#4F4F4F</color>
     <color name="trans">#50000000</color>
@@ -146,7 +146,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="theme"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -185,14 +185,14 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cpb_stroke_width">4dp</dimen>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -200,38 +200,38 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="header_footer_left_right_padding">24dp</dimen>
     <dimen name="header_footer_top_bottom_padding">12dp</dimen>
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="scrollview" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="webview" type="id"/>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">2</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -250,17 +250,17 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">管理客户端</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="define_circularprogressbutton">circularprogressbutton</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/circleButtonLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="library_circularprogressbutton_author">Dmytro Danylyk</string>
     <string name="library_circularprogressbutton_authorWebsite">http://dmytrodanylyk.com/</string>
@@ -271,7 +271,7 @@
     <string name="library_circularprogressbutton_libraryWebsite">http://dmytrodanylyk.com/pages/portfolio/circular-progress-button.html</string>
     <string name="library_circularprogressbutton_licenseId">mit</string>
     <string name="library_circularprogressbutton_repositoryLink">https://github.com/dmytrodanylyk/circular-progress-button</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/netCenterManM/androidPullToRefreshLib/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
@@ -279,7 +279,7 @@
     <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
     <string name="pull_to_refresh_refreshing_label">Loading…</string>
     <string name="pull_to_refresh_release_label">Release to refresh…</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_add_buiding_manager">AddBuidingManagerActivity</string>
     <string name="title_activity_add_manager">AddManagerActivity</string>
@@ -290,7 +290,7 @@
     <string name="title_activity_manager">ManagerActivity</string>
     <string name="title_activity_manager_list">ManagerListActivity</string>
     <string name="title_activity_school_place">校区管理</string>
-    <!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!--
@@ -304,7 +304,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/Users/dzc/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/biye/netCenterManM/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>

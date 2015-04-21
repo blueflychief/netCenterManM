@@ -24,6 +24,7 @@ import com.avos.avoscloud.FindCallback;
 import com.gdin.netcentermanm.activity.LoginActivity;
 import com.gdin.netcentermanm.activity.ManagerActivity;
 import com.gdin.netcentermanm.activity.ManagerListActivity;
+import com.gdin.netcentermanm.activity.ManagerNewsListActivity;
 import com.gdin.netcentermanm.activity.SchoolPlaceActivity;
 import com.gdin.netcentermanm.utils.Utils;
 import com.gdin.netcentermanm.utils.ViewHolder;
@@ -50,6 +51,7 @@ public class MainActivity extends Activity {
         TextView tvEdit = (TextView) ll.findViewById(R.id.tv_main_menu_edit);
         TextView tvInfo = (TextView) ll.findViewById(R.id.tv_main_menu_info);
         TextView tvLogout = (TextView) ll.findViewById(R.id.tv_main_menu_logout);
+        TextView tvShare = (TextView) ll.findViewById(R.id.tv_main_menu_share);
 
         final TextView tvNews = (TextView) ll.findViewById(R.id.tv_main_menu_news);
         final TextView tvManagerList = (TextView) ll.findViewById(R.id.tv_main_menu_manager_list);
@@ -106,11 +108,37 @@ public class MainActivity extends Activity {
                 popupWindow.dismiss();
             }
         });
+        tvNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ManagerNewsListActivity.class));
+                popupWindow.dismiss();
+            }
+        });
 
-        AVQuery.getQuery("managerNews").findInBackground(new FindCallback<AVObject>() {
+        tvShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT,"我正在使用广师网络管理客户端   ");
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT, "分享");
+                intent.putExtra(Intent.EXTRA_TITLE,"分享");
+                startActivity(Intent.createChooser(intent,"请选择要分享的平台"));
+                popupWindow.dismiss();
+            }
+        });
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AVQuery.getQuery("managerNews").whereEqualTo("enable",true).findInBackground(new FindCallback<AVObject>() {
             @Override
             public void done(final List<AVObject> avObjects, AVException e) {
-                if(e==null){
+                if (e == null) {
                     lv.setAdapter(new BaseAdapter() {
                         @Override
                         public int getCount() {
@@ -129,19 +157,19 @@ public class MainActivity extends Activity {
 
                         @Override
                         public View getView(int position, View convertView, ViewGroup parent) {
-                            if(convertView==null){
-                                convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.rl_main_news_list_item,null);
+                            if (convertView == null) {
+                                convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.rl_main_news_list_item, null);
                             }
-                            TextView tvTitle = ViewHolder.get(convertView,R.id.tv_news_item_title);
-                            TextView tvDate = ViewHolder.get(convertView,R.id.tv_news_item_date);
+                            TextView tvTitle = ViewHolder.get(convertView, R.id.tv_news_item_title);
+                            TextView tvDate = ViewHolder.get(convertView, R.id.tv_news_item_date);
                             AVObject object = avObjects.get(position);
-                            if(object.getBoolean("top")){
+                            if (object.getBoolean("top")) {
                                 tvTitle.setTextColor(Color.parseColor("#FFA01815"));
-                            }else{
+                            } else {
                                 tvTitle.setTextColor(Color.parseColor("#333333"));
                             }
                             tvTitle.setText(object.getString("title"));
-                            tvDate.setText(Utils.date2String(object.getUpdatedAt(),"yy-MM-dd"));
+                            tvDate.setText(Utils.date2String(object.getUpdatedAt(), "yy-MM-dd"));
                             return convertView;
                         }
                     });

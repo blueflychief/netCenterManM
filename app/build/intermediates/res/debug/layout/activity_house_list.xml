@@ -51,6 +51,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector_green_normal"
             android:textColor="#ffffff"
+            android:visibility="gone"
             android:layout_gravity="center"
             android:text="添加宿舍" />
         <TextView
@@ -59,6 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:background="@drawable/button_selector_green_normal"
             android:text="查看报修" />
         <TextView
             android:layout_marginLeft="40dp"
@@ -66,9 +68,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:background="@drawable/button_selector_green_normal"
             android:text="指派负责网管" />
     </LinearLayout>
 
 
 </RelativeLayout>
-<!-- From: file:/Users/dzc/netCenterManM/app/src/main/res/layout/activity_house_list.xml -->
+<!-- From: file:/D:/biye/netCenterManM/app/src/main/res/layout/activity_house_list.xml -->

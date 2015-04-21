@@ -70,6 +70,7 @@ public class AddManagerNewsActivity extends Activity {
                 tvAddManager.setProgress(50);
                 object.put("title",title);
                 object.put("content",content);
+                object.put("enable",true);
                 object.put("createUser",AVUser.getCurrentUser());
                 if(rbTopFalse.isChecked()){
                     object.put("top",false);

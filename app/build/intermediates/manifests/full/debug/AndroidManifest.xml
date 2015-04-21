@@ -74,6 +74,18 @@
             android:name="com.gdin.netcentermanm.activity.ManagerInfoActivity"
             android:label="@string/title_activity_building_repair_list" >
         </activity>
+        <activity
+            android:name="com.gdin.netcentermanm.activity.AddManagerNewsActivity"
+            android:label="@string/title_activity_building_repair_list" >
+        </activity>
+        <activity
+            android:name="com.gdin.netcentermanm.activity.ManagerNewsInfoActivity"
+            android:label="@string/title_activity_building_repair_list" >
+        </activity>
+        <activity
+            android:name="com.gdin.netcentermanm.activity.ManagerNewsListActivity"
+            android:label="@string/title_activity_building_repair_list" >
+        </activity>
 
         <service android:name="com.avos.avoscloud.PushService" />
 

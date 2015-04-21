@@ -79,6 +79,14 @@
             android:name=".activity.AddManagerNewsActivity"
             android:label="@string/title_activity_building_repair_list" >
         </activity>
+        <activity
+            android:name=".activity.ManagerNewsInfoActivity"
+            android:label="@string/title_activity_building_repair_list" >
+        </activity>
+        <activity
+            android:name=".activity.ManagerNewsListActivity"
+            android:label="@string/title_activity_building_repair_list" >
+        </activity>
         <service android:name="com.avos.avoscloud.PushService"/>
         <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
             <intent-filter>
